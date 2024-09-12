@@ -1,0 +1,357 @@
+[gd_scene load_steps=40 format=3 uid="uid://bsauo600i0j2"]
+
+[ext_resource type="Script" path="res://resources/scripts/main.gd" id="1_8gs25"]
+[ext_resource type="Texture2D" uid="uid://clprapwssmkvt" path="res://resources/background.png" id="1_dvb37"]
+[ext_resource type="FontFile" uid="uid://clfaao85d3i0h" path="res://resources/future-earth.ttf" id="1_uxx24"]
+[ext_resource type="Script" path="res://resources/scripts/workTimeLabelScript.gd" id="4_j8dx7"]
+[ext_resource type="Script" path="res://resources/scripts/breakTimeLabel.gd" id="5_4enq0"]
+[ext_resource type="Script" path="res://resources/scripts/bigTimerLabelScript.gd" id="6_k8k7w"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ku0r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h026k"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_b2mql"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qfy46"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pmk6b"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_2h16d"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1jdwv"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_hpyqw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rloq7"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4fsip"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_crdbr"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nfosi"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_prep4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uu2cm"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tl818"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_prp7u"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_63dvb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wxuvn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4givy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_rp1r0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_fwndb"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gtyem"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gfq8h"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t8pme"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_1not4"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_36q0e"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lij02"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_ubr8l"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0iwe2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_t1pg2"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_f31ub"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_18nvo"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7n4ui"]
+
+[node name="main" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_8gs25")
+
+[node name="background" type="Sprite2D" parent="."]
+texture = ExtResource("1_dvb37")
+centered = false
+
+[node name="MenuBar" type="MenuBar" parent="."]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 400.0
+offset_right = 600.0
+offset_bottom = 465.0
+start_index = 0
+
+[node name="startButton" type="Button" parent="MenuBar"]
+modulate = Color(0.986752, 0.986752, 0.986752, 1)
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -30.0
+offset_right = 160.0
+offset_bottom = 30.0
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_disabled_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 1, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 1, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 1, 0, 1)
+theme_override_colors/font_color = Color(0, 1, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_uxx24")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_7ku0r")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_h026k")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_b2mql")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_qfy46")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_pmk6b")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_2h16d")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_1jdwv")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_hpyqw")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rloq7")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_4fsip")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_crdbr")
+text = "START"
+
+[node name="stopButton" type="Button" parent="MenuBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -80.0
+offset_top = -30.0
+offset_right = 80.0
+offset_bottom = 30.0
+grow_horizontal = 2
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_disabled_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(1, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_uxx24")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_nfosi")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_prep4")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_uu2cm")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_tl818")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_prp7u")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_63dvb")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_wxuvn")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_4givy")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_rp1r0")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_fwndb")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gtyem")
+text = "STOP"
+
+[node name="resetButton" type="Button" parent="MenuBar"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -160.0
+offset_top = -30.0
+offset_bottom = 30.0
+grow_horizontal = 0
+grow_vertical = 2
+focus_mode = 0
+theme_override_colors/font_disabled_color = Color(0, 0, 1, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 1, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 1, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 1, 1)
+theme_override_colors/font_color = Color(0, 0, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_normal_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/icon_disabled_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_uxx24")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_gfq8h")
+theme_override_styles/disabled_mirrored = SubResource("StyleBoxEmpty_t8pme")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_1not4")
+theme_override_styles/hover_pressed_mirrored = SubResource("StyleBoxEmpty_36q0e")
+theme_override_styles/hover_pressed = SubResource("StyleBoxEmpty_lij02")
+theme_override_styles/hover_mirrored = SubResource("StyleBoxEmpty_ubr8l")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_0iwe2")
+theme_override_styles/pressed_mirrored = SubResource("StyleBoxEmpty_t1pg2")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_f31ub")
+theme_override_styles/normal_mirrored = SubResource("StyleBoxEmpty_18nvo")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_7n4ui")
+text = "RESET"
+
+[node name="Container" type="Container" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 480.0
+
+[node name="BoxContainer" type="BoxContainer" parent="."]
+visible = false
+layout_mode = 0
+offset_right = 640.0
+offset_bottom = 40.0
+
+[node name="LineEdit" type="LineEdit" parent="."]
+visible = false
+layout_mode = 2
+offset_left = 5.0
+offset_right = 72.0625
+offset_bottom = 40.0
+
+[node name="Node" type="Node" parent="."]
+
+[node name="sliders" type="Control" parent="."]
+anchors_preset = 0
+offset_top = 14.0
+offset_right = 40.0
+offset_bottom = 54.0
+
+[node name="workTime" type="Control" parent="sliders"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="sliders/workTime"]
+layout_mode = 0
+offset_left = 20.0
+offset_right = 660.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+theme_override_colors/table_border = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("1_uxx24")
+theme_override_font_sizes/normal_font_size = 25
+text = "Worktime"
+text_direction = 1
+
+[node name="workTimeSlider" type="HSlider" parent="sliders/workTime"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 30.0
+offset_right = 620.0
+offset_bottom = 46.0
+size_flags_horizontal = 3
+size_flags_vertical = 8
+min_value = 1.0
+max_value = 60.0
+value = 1.0
+
+[node name="breakTime" type="Control" parent="sliders"]
+layout_mode = 3
+anchors_preset = 0
+offset_top = 54.97
+offset_right = 40.0
+offset_bottom = 94.97
+
+[node name="RichTextLabel" type="RichTextLabel" parent="sliders/breakTime"]
+layout_mode = 0
+offset_left = 20.0
+offset_right = 660.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+theme_override_colors/table_border = Color(1, 1, 1, 1)
+theme_override_fonts/normal_font = ExtResource("1_uxx24")
+theme_override_font_sizes/normal_font_size = 25
+text = "Breaktime"
+text_direction = 1
+
+[node name="breakTimeSlider" type="HSlider" parent="sliders/breakTime"]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 30.0
+offset_right = 620.0
+offset_bottom = 46.0
+size_flags_horizontal = 3
+size_flags_vertical = 8
+min_value = 1.0
+max_value = 60.0
+value = 1.0
+
+[node name="timerLabels" type="Control" parent="."]
+anchors_preset = 0
+offset_top = 160.0
+offset_right = 640.0
+offset_bottom = 400.0
+
+[node name="workTimeLabel" type="Label" parent="timerLabels"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_top = -11.5
+offset_right = 280.0
+offset_bottom = 108.5
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_uxx24")
+theme_override_font_sizes/font_size = 100
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("4_j8dx7")
+
+[node name="breakTimeLabel" type="Label" parent="timerLabels"]
+layout_mode = 1
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -280.0
+offset_top = -11.5
+offset_bottom = 108.5
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_uxx24")
+theme_override_font_sizes/font_size = 100
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("5_4enq0")
+
+[node name="bigTimerLabel" type="Label" parent="timerLabels"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+script = ExtResource("6_k8k7w")
+
+[node name="timer" type="Timer" parent="."]
+
+[connection signal="changed" from="sliders/workTime/workTimeSlider" to="." method="_on_work_time_slider_changed"]
+[connection signal="changed" from="sliders/breakTime/breakTimeSlider" to="." method="_on_break_time_slider_changed"]
+[connection signal="timeout" from="timer" to="." method="_on_timer_timeout"]
